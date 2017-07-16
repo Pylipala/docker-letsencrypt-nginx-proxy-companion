@@ -123,7 +123,7 @@ update_certs() {
         cert_dir="/etc/nginx/certs/$base_domain"
         certbot \
             certonly \
-            --dns-route53 \
+            --preferred-challenges tls-sni-01 \
             --non-interactive \
             --text \
             --agree-tos \
