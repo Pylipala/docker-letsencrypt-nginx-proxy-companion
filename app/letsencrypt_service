@@ -125,7 +125,7 @@ update_certs() {
             certonly \
             --preferred-challenges tls-sni-01 \
             --non-interactive \
-            --standalone \
+            --nginx \
             --text \
             --agree-tos \
             --keep-until-expiring \
